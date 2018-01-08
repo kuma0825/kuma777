@@ -1,0 +1,26 @@
+{
+  "name": "Polyvia",
+  "version": "0.1.0",
+  "homepage": "http://zhangwenli.com/Polyvia",
+  "authors": [
+    "Ovilia"
+  ],
+  "description": "Real-time Low Polygon Generator",
+  "keywords": [
+    "Low Polygon",
+    "Design"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "delaunay-fast": "*",
+    "seajs": "~2.2.3",
+    "dat-gui": "~0.5.0",
+    "tracking.js": "~1.0.0",
+    "three.js": "~0.71.0"
+  }
+}

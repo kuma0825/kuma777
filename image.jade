@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+  head
+    script(type='text/javascript').
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38205696-1']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    title Polyvia
+    style(type='text/css', rel='stylesheet').
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #source-img, #img-path {
+            display: none;
+        }
+        .msg {
+            background-color: #22C3AA;
+            color: #333;
+            padding: 3px 8px;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+        #info {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10px 20px;
+            z-index: 10;
+            text-align: right;
+        }
+        h1 {
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        h3 {
+            margin-bottom: 2rem;
+        }
+        p {
+            margin: 0.75rem 0;
+        }
+        a {
+            color: #157a6b;
+        }
+
+  body
+    canvas(id='canvas')
+
+    //- hidden elements
+    input(id='img-path', type='file')
+
+    //- script(type='text/javascript', src='vendor/three.js')
+    //- script(type='text/javascript', src='vendor/three.js.CopyShader.js')
+    //- script(type='text/javascript', src='vendor/three.js.EdgeShader.js')
+    //- script(type='text/javascript', src='vendor/three.js.EffectComposer.js')
+    //- script(type='text/javascript', src='vendor/three.js.MaskPass.js')
+    //- script(type='text/javascript', src='vendor/three.js.RenderPass.js')
+    //- script(type='text/javascript', src='vendor/three.js.ShaderPass.js')
+
+    //- script(type='text/javascript', src='vendor/stats.min.js')
+    //- script(type='text/javascript', src='vendor/dat.gui.js')
+    //- script(type='text/javascript', src='vendor/delaunay.js')
+
+    //- script(type='text/javascript', src='src/js/GlRenderer.js')
+    //- script(type='text/javascript', src='src/js/image.js')
+
+    script(type='text/javascript', src='build/lib.js')
+    script(type='text/javascript', src='build/image.js')
